@@ -1,6 +1,14 @@
-﻿gunicorn==20.1.0
+gunicorn==20.1.0
 Pillow
 Flask==1.0
 numpy==1.20.3
 requests[security]
 opencv-python-headless==4.2.0.32
+itsdangerous==1.1.0
+Jinja2==2.10.1
+MarkupSafe==1.1.1
+Werkzeug==0.15.5
+scipy>=0.15.1
+scikit-learn>=0.18
+matplotlib>=1.4.3
+pandas>=0.19
