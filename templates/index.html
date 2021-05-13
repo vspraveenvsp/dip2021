@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+ 
+<head>
+    <title>Image Processing API</title>
+ 
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet">
+ 
+    <link href="../static/jumbotron-narrow.css" rel="stylesheet">
+
+    <link href="../static/style.css" rel="stylesheet">
+ 
+ 
+</head>
+ 
+<body>
+ 
+    <div class="container">
+        <div class="header">
+            <nav>
+                <ul class="nav nav-pills pull-right">
+                    <li role="presentation" class="active btn" style="padding: 0px;"><a href="/">Home</a>
+                    </li>
+                    
+                </ul>
+            </nav>
+            <h3 class="text-muted">Image Processing API</h3>
+        </div>
+ 
+        <div class="jumbotron">
+            <h1>UPLOAD IMAGE</h1>
+            <b><h5 style="font-weight: bold;">Formats: jpg, png & bmp</h5></b>
+            <p class="lead"></p>
+	       <form id="upload-form" action="{{ url_for('upload') }}" method="POST" enctype="multipart/form-data">
+            <input id="file-picker" type="file" name="file" accept="image/*" class="hidden" onchange="this.form.submit()">
+            <label for="file-picker" class="btn btn-lg btn-success">Select file</label>
+		 </form>
+        </div>
+ 
+        <div class="row marketing">
+            <div class="col-lg-6">
+                <h4>OCR</h4>
+                <p>Get the text format of given image.</p>
+                <p>Search for a word in given image.</p>
+                <p>Evaluate a mathematical expression with basic operations(+,-,x,/)</p>
+ 
+                <h4>Face Detection</h4>
+                <p>Detect the boundary of faces in the given image.</p> 
+                
+            </div>
+        </div>
+ 
+        <footer class="footer">
+            <p>&copy; DIP 2021. Using Python, Flask and PIL.</p>
+        </footer>
+ 
+    </div>
+</body>
+ 
+</html>
