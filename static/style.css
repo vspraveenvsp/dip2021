@@ -1,0 +1,54 @@
+body {
+  padding-top: 200px;
+  padding-bottom: 200px;
+  background-color: rgb(98, 184, 224);
+}
+.btn-lg,
+.nav-pills > li > a,
+.container .jumbotron {
+  border: 0px;
+}
+
+#upload-button,
+#file-picker {
+  margin-top: 30px;
+}
+
+div#image-container {
+  max-width: 500px;
+}
+
+div#image-container > img {
+  max-width: 100%;
+}
+
+div#heading {
+  margin-left: 30px;
+  margin-right: 30px;
+}
+
+#form-crop > input[type="number"] {
+  width: 50px;
+}
+
+#form-blend > input[type="number"] {
+  width: 84px;
+}
+
+#form-sp > input[type="number"] {
+  width: 84px;
+}
+
+.hidden {
+  display: none !important;
+}
+.btn-lg,
+.btn-group-lg > .btn {
+  font-size: 18px;
+  line-height: 1.3333333;
+  border-radius: 6px;
+}
+
+.body {
+  background: #ccccf5;
+}
